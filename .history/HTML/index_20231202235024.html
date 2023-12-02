@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{.title}}</title>
+  </head>
+  <body>
+    <p>Welcome to this Website!</p>
+    <p>{{.content}}</p>
+
+    <form action="http://localhost:8080/login" method="get">
+      <input type="submit" value="登陆" />
+    </form>
+
+    <form action="http://localhost:8080/register" method="get">
+      <input type="submit" value="注册" />
+    </form>
+
+    <form action="http://localhost:8080/logout" method="get">
+      <input type="submit" value="登出" />
+    </form>
+  </body>
+</html>

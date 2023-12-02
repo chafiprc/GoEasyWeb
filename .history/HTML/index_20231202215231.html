@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{.title}}</title>
+  </head>
+  <body>
+    <p>Welcome to this Website!</p>
+    <p>{{.content}}</p>
+
+    <form action="http://localhost:8080/login" method="get">
+      <input type="submit" value="登陆" />
+    </form>
+
+    <form action="http://localhost:8080/register" method="get">
+      <input type="submit" value="注册" />
+    </form>
+
+    <br />
+    <form
+      action="http://localhost:8080/loginForm"
+      method="post"
+      action="application/x-www-form-urlencoded"
+    >
+      用户名：<input
+        type="text"
+        name="formUsername"
+        placeholder="请输入你的用户名"
+      />
+      <br />
+      密&nbsp;&nbsp;&nbsp;码：<input
+        type="password"
+        name="formPassword"
+        placeholder="请输入你的密码"
+      />
+      <br />
+      <input type="submit" value="提交" />
+    </form>
+  </body>
+</html>
